@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Резюме</title>
+  </head>
+  <body>
+    <main class="resume">
+      <div class="section">
+        <h1 class="resume__title resume__title_first-child">
+          Михаил Александрович
+        </h1>
+
+        <img
+          class="resume__avatar"
+          src="https://avatars0.githubusercontent.com/u/14570273?s=460&v=4"
+          width="150"
+          height="150"
+          alt="Михаил Александрович"
+        >
+
+        <blockquote class="resume__quote">
+          <em>за фронтенд и двор стреляю в упор</em>
+        </blockquote>
+      </div>
+
+      <section class="section">
+        <h2 class="resume__subtitle">Контакты</h2>
+
+        <ul class="resume__list list">
+          <li class="list__item">
+            <a
+              class="list__link"
+              href="mailto:mihailstar@mailforspam.com"
+            >
+              MihailStar@mailforspam.com
+            </a>
+          </li>
+          <li class="list__item">
+            <a
+              class="list__link"
+              href="mailto:mihailstar@mailinator.com"
+            >
+              MihailStar@mailinator.com
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2 class="resume__subtitle">Стек технологий</h2>
+
+        <ul class="resume__list list">
+          <li class="list__item">
+            язык разметки <strong>HTML</strong>
+            (<del>Nunjucks</del> Pug)
+          </li>
+          <li class="list__item">
+            язык оформления <strong>CSS</strong>
+            (<del>Stylus</del> <del>Sass</del> SCSS, PostCSS)
+          </li>
+          <li class="list__item">
+            язык программирования <strong>JavaScript</strong>
+            (Babel)
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2 class="resume__subtitle">Навыки</h2>
+
+        <ul class="resume__list list">
+          <li class="list__item">
+            программирую на HTML
+          </li>
+          <li class="list__item">
+            наверстываю упущенное
+          </li>
+          <li class="list__item">
+            применяю паттерны:
+            <ul class="list list_with-sublist">
+              <li class="list__item">костылирование</li>
+              <li class="list__item">инкостыляция</li>
+              <li class="list__item">поликостылизм</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2 class="resume__subtitle">Опыт</h2>
+
+        <ul class="resume__list list">
+          <li class="list__item">
+            <a
+              class="list__link"
+              href="https://codepen.io/MihailStar"
+            >
+              codepen.io/MihailStar
+            </a>
+          </li>
+          <li class="list__item">
+            <a
+              class="list__link"
+              href="https://gist.github.com/MihailStar"
+            >
+              gist.github.com/MihailStar
+            </a>
+          </li>
+          <li class="list__item">
+            <a
+              class="list__link"
+              href="https://github.com/MihailStar"
+            >
+              github.com/MihailStar
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="section">
+        <h2 class="resume__subtitle">Пример кода</h2>
+
+        <pre class="resume__preformatted-text"><code>/**
+* @param {Array&lt;number&gt;} [preferences] indices of spichonees, whom they love
+* @return {number} number of love triangles
+*/
+const getLoveTrianglesCount = (preferences = []) =&gt;
+  preferences
+    .map(preference =&gt; preference - 1)
+    .reduce(
+      (counter, preference, spichonee, array) =&gt;
+        preference !== spichonee && array[array[preference]] === spichonee
+          ? counter + 1
+          : counter,
+      0
+    ) / 3;</code></pre>
+      </section>
+
+      <section class="section">
+        <h2 class="resume__subtitle">Образование</h2>
+
+        <ul class="resume__list list">
+          <li class="list__item">
+            три класса церковно-приходской школы
+          </li>
+          <li class="list__item">
+            <a
+              class="list__link"
+              href="https://htmlacademy.ru/profile/mihailstar"
+            >
+              htmlacademy.ru/profile/mihailstar
+            </a>
+          </li>
+          <li class="list__item">
+            <a
+              class="list__link"
+              href="https://www.codewars.com/users/MihailStar"
+            >
+              codewars.com/users/MihailStar
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
